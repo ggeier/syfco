@@ -47,6 +47,13 @@ module Syfco
   , fromTLSF
   , apply
   , applyF
+    -- * Formulas
+  , subFormulas
+  , applySub
+  , applyAtomic
+  , fmlSignals
+  , fmlInputs
+  , fmlOutputs
     -- * Fragment Detection
   , checkGR
     -- * Meta Information
@@ -63,6 +70,12 @@ import Data.Types
 import Data.LTL
   ( Atomic(..)
   , Formula(..)
+  , subFormulas
+  , applySub
+  , applyAtomic
+  , fmlSignals
+  , fmlInputs
+  , fmlOutputs
   )
 
 import Data.Error
