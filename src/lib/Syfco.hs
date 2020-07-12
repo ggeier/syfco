@@ -25,6 +25,11 @@ module Syfco
   , Semantics(..)
   , Target(..)
   , Atomic(..)
+  , OperatorConfig(..)
+  , UnaryOperator(..)
+  , BinaryOperator(..)
+  , Unsupported(..)
+  , Assoc(..)
   , Formula(..)
   , Specification
   , Error
@@ -54,6 +59,7 @@ module Syfco
   , fmlSignals
   , fmlInputs
   , fmlOutputs
+  , printFormula
     -- * Fragment Detection
   , checkGR
     -- * Meta Information
@@ -92,6 +98,11 @@ import Config
 import Writer.Data
   ( WriteMode(..)
   , QuoteMode(..)
+  , OperatorConfig(..)
+  , UnaryOperator(..)
+  , BinaryOperator(..)
+  , Unsupported(..)
+  , Assoc(..)
   )
 
 import Writer
@@ -106,6 +117,7 @@ import Writer.Eval
 
 import Writer.Utils
   ( merge
+  , printFormula
   )
 
 import Simplify
